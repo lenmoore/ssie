@@ -1,0 +1,53 @@
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 30rem;
+  left: 0;
+  width: calc(500px + 1px);
+  max-height: 1500px;
+  margin: 0;
+  padding-top: 1px;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-500px);
+  transform-origin: right top;
+}
+.horizontal-scroll-wrapper > div {
+  display: block;
+  padding: 20px;
+  border: 10px solid #cab;
+  background: #cab;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+.horizontal-scroll-wrapper > div img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.squares {
+  padding: 500px 0 0 0;
+}
+.squares > div {
+  width: 500px;
+  height: 500px;
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
