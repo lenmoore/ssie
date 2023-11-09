@@ -32,16 +32,18 @@ div {
     transform-origin: right top;
 
     & > div {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 20px;
-        border: 10px solid #cab;
-        background: #cab;
+        //background: #cab;
         transform: rotate(90deg);
         transform-origin: right top;
 
         img {
             height: 400px;
-            width: 400px;
+            border: 20px solid #cab;
+            //width: 400px;
             object-fit: cover;
 
         }
