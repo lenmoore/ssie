@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>library | HV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        body {
+            background-color: #313131;
+            color: greenyellow;
+            font-weight: 400;
+        }
+
+        .green {
+            color: greenyellow;
+        }
+
+        h1, h2 {
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 12rem;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .paragraph {
+            width: 35rem;
+            text-wrap: normal;
+            padding: 1rem;
+            border: 2px solid greenyellow;
+            margin: 1rem;
+            z-index: 20;
+        }
+
+        ::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, .5);
+            -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+        }
+
+        .image-wrapper {
+            border: 10px solid #cab;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        /*    shit */
+
+        .flip-card {
+            background-color: transparent;
+            width: 1000px;
+            height: 150px;
+            /*border: 1px solid #f1f1f1;*/
+            /*perspective: 1000px; !* Remove this if you don't want the 3D effect *!*/
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            /*transition: transform 0.25s;*/
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-card-front {
+            /*background-color: #bbb;*/
+
+            color: black;
+        }
+
+        img {
+            margin-left: -40rem;
+        }
+
+        /* Style the back side */
+        .flip-card-back {
+            /*background-color: darkgreen;*/
+            color: white;
+            transform: rotateY(180deg);
+
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .centered {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 100rem;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .intro {
+            color: white;
+            width: 75%;
+
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+<h1>Library of Unfinished Books</h1>
+<div>
+    <p class="intro">
+        In the quiet corners of my apartment, a tangible weight persists - a stack of unfinished books, each spine a
+        silent
+        <strong class="green"> witness to my intentions and the unmet promises to myself</strong>. This literary
+        graveyard serves as a poignant reminder
+        of
+        narratives left suspended, knowledge left undigested, and the<strong class="green"> daunting task of forgiving
+        myself</strong>, especially in
+        the
+        relentless embrace of hustle culture.
+
+    </p>
+
+    <p class="intro"> These books became casualties. <br> Neglected
+        in the ceaseless hustle to meet deadlines and exceed expectations.
+        <br> In the race to achieve more, literary
+        exploration took a backseat, and my books became <strong class="green">artifacts of unfulfilled
+            aspirations</strong>.
+
+    </p>
+
+    <p class="intro">Forgiveness, in this context, becomes an act of rebellion against the unforgiving nature of hustle
+        culture. It's
+        a
+        <strong class="green">recognition that self-worth is not solely tied to productivity metrics and completed to-do
+            lists</strong>. The
+        acknowledgment
+        of life's complex demands and the need for balance becomes paramount. Embracing forgiveness is reclaiming agency
+        over my time, <strong class="green">acknowledging that the worth of a person is not solely measured by the speed
+            at which they move
+            but by
+            the depth of their experiences</strong>.</p>
+
+
+    <p class="intro">
+        As <strong class="green">I extend forgiveness to myself</strong>, I also extend grace to the unfinished stories
+        on my shelf. They await my
+        return,
+        not as burdens but as patient companions in the journey of self-discovery. In the quiet rebellion against the
+        pressures of hustle culture, I rediscover the joy of exploration and <strong class="green">the richness of a
+        life lived beyond the
+        confines of perpetual motion</strong>.
+    </p>
+</div>
+<div style="margin-top: 10rem;" class="centered">
+
+    <div class="book-entry-wrapper">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/assets/books-2/palacesforthepeople.png" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <div>
+                        <em>Palaces for the People</em>
+                        <br> 53% | 148/277
+                        <div>Regret: 75%</div>
+                        <br>
+                    </div>
+                    <small class="paragraph italic">
+                        <strong class="green">where i stopped</strong>
+                        In 1890, my great-grandfather, Edward Klinenberg, moved from a small village outside Prague to
+                        Chicago, and within a few years he settled down on the city's South Side. The University of
+                        Chicago
+                        was founded nearby that same year, but Edward didn't come to the United States to study that
+                        would...
+                    </small>
+
+                    <div>
+                        <small>
+                            I just haven't had enough time.
+                        </small>
+
+                        <p><small>Will I read it?</small><br> Yes, I'm trying to</p>
+                        <strong class="green">Nothing to forgive</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="book-entry-wrapper">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/assets/books-2/beginningofinfinity.png" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <div>
+
+                        22% | 107/483 <br>
+                        <em>The Beginning of Infinity</em>
+                        <p>Regret: 30%</p>
+
+                    </div>
+                    <small class="paragraph italic">
+                        <strong class="green">where i stopped</strong>
+                        The fundamental theories of modern physics explain the world in jarringly counter-intuitive
+                        ways. For example, most non-physicists consider it self-evident that when you hold your arm out
+                        horizontally you can feel the force of gravity pulling it downwards. But you cannot. The
+                        existence of a force...
+                    </small>
+                    <div>
+
+                        <small>
+                            I forgot about it.
+                        </small>
+
+                        <p><small>Will I read it?</small> <br> Not this year</p>
+                        <strong class="green">I'm forgiven</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--    <div class="book-entry-wrapper">-->
+<!--        <div class="flip-card">-->
+<!--            <div class="flip-card-inner">-->
+<!--                <div class="flip-card-front">-->
+<!--                    <img style="-webkit-transform: rotate(90deg); margin-top: 30rem;" src="/assets/books-2/beginningofinfinity.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="flip-card-back">-->
+<!--                    <div>-->
+
+<!--                        22% | 107/483 <br>-->
+<!--                        <em>The Beginning of Infinity</em>-->
+<!--                        <h2>Regret: 0%</h2>-->
+
+<!--                    </div>-->
+<!--                    <small class="paragraph italic">-->
+<!--                        <strong class="green">screw this book</strong>-->
+<!--                    </small>-->
+<!--                    <div>-->
+
+<!--                        <small>-->
+<!--                            I forgot about it.-->
+<!--                        </small>-->
+
+<!--                        <p><small>Will I read it?</small> <br> Not this year</p>-->
+<!--                        <strong class="green">I'm forgiven</strong>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+</div>
+
+</body>
